@@ -1,0 +1,15 @@
+
+import random
+
+links = []
+
+file_open = open('county_sites.txt')
+list_county_sites = file_open.readlines()
+short_list_county_sites = random.choices(list_county_sites, k =3)
+links.append(short_list_county_sites)
+
+file_open = open('state_ceo_sites.txt')
+list_state_ceo_sites = file_open.readlines()
+short_list_state_ceo_sites = random.choices(list_county_sites, k =3)
+links.append(short_list_state_ceo_sites)
+print(links[0])
