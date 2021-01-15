@@ -1,9 +1,9 @@
-import test_OD
-# import test_CC
-# import test_LZ
-# import test_DF
-# import test_DFF
-# import test_LZLP
+# import test_OD
+import test_CC
+import test_LZ
+import test_DF
+import test_DFF
+import test_LZLP
 
 import unittest
 from unittest import TestSuite
@@ -17,5 +17,5 @@ def load_tests (loader, tests, pattern):
 
     return suite
 
-if __name__ == '_main__':
+if __name__ == '__main__':
     unittest.main()

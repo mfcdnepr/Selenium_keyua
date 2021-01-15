@@ -37,7 +37,7 @@
 # import test_northcarolina
 # import test_northdakota
 # import test_ohio
-# import test_oklohoma
+import test_oklohoma
 # import test_ontario
 # import voronka_rs #arizona
 # import test_oregon
@@ -45,7 +45,7 @@
 # import test_southcarolina
 # import test_southdakota
 # import test_tennessee
-import test_texas
+# import test_texas
 # import test_utah
 # import test_vermont
 # import test_virginia

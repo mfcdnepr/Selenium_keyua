@@ -273,12 +273,14 @@ browser.find_element_by_xpath('//*[@id="screen-form"]/fieldset/div/div[4]/div[3]
 browser.find_element_by_xpath('//*[@id="screen-form"]/div/div/button').click()
 
 #Step 27
+browser.find_element_by_xpath('//*[@id="screen-form"]/fieldset/div[2]/div[2]/div[56]/div[2]/label[2]').click()
+browser.find_element_by_xpath('//*[@id="id_form-0-child_current_address_with_whom"]/option[4]').click()
 browser.find_element_by_xpath('//*[@id="id_form-0-child_name"]').send_keys('Test Junior')
 browser.find_element_by_xpath('//*[@id="id_form-0-child_ssn"]').send_keys('557799')
 browser.find_element_by_xpath('//*[@id="id_form-0-child_dob"]').send_keys('10102017')
 browser.find_element_by_xpath('//*[@id="id_form-0-child_place_of_birth"]').send_keys('Los Angeles')
 browser.find_element_by_xpath('//*[@id="id_form-0-child_gender"]/option[2]').click()
-browser.find_element_by_xpath('//*[@id="screen-form"]/fieldset/div[2]/div[2]/div[14]/div[2]/label[2]').click()
+# browser.find_element_by_xpath('//*[@id="screen-form"]/fieldset/div[2]/div[2]/div[14]/div[2]/label[2]').click()
 browser.find_element_by_xpath('//*[@id="screen-form"]/div/div/button').click()
 
 #Step 28

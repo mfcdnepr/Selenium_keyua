@@ -150,10 +150,10 @@ try:
 except:
     time.sleep(3)
 
-time.sleep(3)
-coupone_url = browser.current_url
-new_params = ('?coupon=gregrublev29899')
-browser.get(coupone_url + new_params)
+# time.sleep(3)
+# coupone_url = browser.current_url
+# new_params = ('?coupon=gregrublev29899')
+# browser.get(coupone_url + new_params)
 
 # Paymant
 browser.find_element_by_xpath('//*[@id="id_ccexp_m"]').click()
@@ -170,8 +170,9 @@ browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('5169 3600 0448 0
 browser.find_element_by_xpath('//*[@id="id_addr1"]').send_keys('Adress1')
 browser.find_element_by_xpath('//*[@id="id_city"]').send_keys('City')
 browser.find_element_by_xpath('//*[@id="id_zip"]').send_keys('111')
+browser.find_element_by_xpath('//*[@id="id_referrer"]').send_keys('gregrublev29899')
 
-browser.find_element_by_xpath('//*[@id="mainPaymentForm"]/fieldset/div[2]/div/div[4]/input').click()
+browser.find_element_by_xpath('//*[@id="mainPaymentForm"]/fieldset/div[2]/div/div[5]/input').click()
 browser.find_element_by_xpath('//*[@id="content"]/div/div[2]/div/a').click()
 time.sleep(2)
 browser.find_element_by_xpath('/html/body/main/div[8]/a').click()
