@@ -160,7 +160,7 @@ browser.find_element_by_xpath('//*[@id="id_ccexp_m"]').click()
 browser.find_element_by_xpath('//*[@id="id_ccexp_m"]/option[4]').click()
 # browser.find_element_by_xpath('//*[@id="id_ccexp_m"]/option[2]').click()
 browser.find_element_by_xpath('//*[@id="id_ccexp_y"]').click()
-browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[9]').click()
+browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[8]').click()
 # browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[10]').click()
 
 browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('5169 3600 0448 0400	')
@@ -172,7 +172,11 @@ browser.find_element_by_xpath('//*[@id="id_city"]').send_keys('City')
 browser.find_element_by_xpath('//*[@id="id_zip"]').send_keys('111')
 browser.find_element_by_xpath('//*[@id="id_referrer"]').send_keys('gregrublev29899')
 
-browser.find_element_by_xpath('//*[@id="mainPaymentForm"]/fieldset/div[2]/div/div[5]/input').click()
+try:
+    browser.find_element_by_xpath('//*[@id="mainPaymentForm"]/fieldset/div[2]/div/div[5]/input').click()
+except:
+    browser.find_element_by_xpath('//*[@id="mainPaymentForm"]/fieldset/div[4]/div/div[5]/input').click()
+
 browser.find_element_by_xpath('//*[@id="content"]/div/div[2]/div/a').click()
 time.sleep(2)
 browser.find_element_by_xpath('/html/body/main/div[8]/a').click()

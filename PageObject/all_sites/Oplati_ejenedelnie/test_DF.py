@@ -29,6 +29,12 @@ browser.find_element_by_xpath('//*[@id="id_email"]').send_keys(email)
 browser.find_element_by_xpath('//*[@id="id_state_of_filing"]/option[6]').click()
 browser.find_element_by_xpath('//*[@id="homeDivorceButton"]').click()
 
+# Processing page
+try:
+    browser.find_element_by_xpath('//*[@id="next"]').click()
+except:
+    time.sleep(10)
+
 # Step 1
 
 browser.find_element_by_xpath('//*[@id="funnelForm"]/div[1]/div[1]/div/div[1]/label').click()
@@ -91,6 +97,8 @@ browser.find_element_by_xpath('//*[@id="id_password"]').send_keys('11111')
 browser.find_element_by_xpath('//*[@id="id_re_password"]').send_keys('11111')
 browser.find_element_by_xpath('//*[@id="submitDetailsForm"]').click()
 
+# Loader
+
 time.sleep(20)
 try:
     browser.find_element_by_xpath('//*[@id="next"]').click()
@@ -99,7 +107,7 @@ except:
 
 # Paymant
 browser.find_element_by_xpath('//*[@id="id_ccexp_m"]/option[4]').click()
-browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[9]').click()
+browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[8]').click()
 browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('5169 3600 0448 0400	')
 # browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('4731 1856 1731 8578')
 # browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('4111 1111 1111 1111')

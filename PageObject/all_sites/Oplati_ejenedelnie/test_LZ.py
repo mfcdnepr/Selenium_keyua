@@ -101,7 +101,7 @@ browser.get(coupone_url + new_params)
 time.sleep(1)
 # Paymant
 browser.find_element_by_xpath('//*[@id="id_ccexp_m"]/option[4]').click()
-browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[9]').click()
+browser.find_element_by_xpath('//*[@id="id_ccexp_y"]/option[8]').click()
 browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('5169 3600 0448 0400')
 # browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('4731 1856 1731 8578')
 #browser.find_element_by_xpath('//*[@id="id_ccnum"]').send_keys('4111 1111 1111 1111')

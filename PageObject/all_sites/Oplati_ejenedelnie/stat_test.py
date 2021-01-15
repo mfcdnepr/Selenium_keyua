@@ -1,6 +1,6 @@
 # import test_OD
-import test_CC
-import test_LZ
+# import test_CC
+# import test_LZ
 import test_DF
 import test_DFF
 import test_LZLP

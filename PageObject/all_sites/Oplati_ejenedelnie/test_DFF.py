@@ -29,6 +29,12 @@ browser.find_element_by_xpath('//*[@id="id_email"]').send_keys(email)
 browser.find_element_by_xpath('//*[@id="id_state_of_filing"]/option[6]').click()
 browser.find_element_by_xpath('//*[@id="homeDivorceButton"]').click()
 
+# Processing page
+try:
+    browser.find_element_by_xpath('//*[@id="next"]').click()
+except:
+    time.sleep(10)
+
 # Step 1
 
 browser.find_element_by_xpath('//*[@id="funnelForm"]/div[1]/div[1]/div/div[1]/label').click()
